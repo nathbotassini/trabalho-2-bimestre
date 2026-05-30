@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>minha loja</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f5f5f5;
+      }
+      .caixa1 {
+        width: 100%;
+        height: 90px;
+        background-color: rgb(192, 180, 165);
+        border: 5px solid rgb(122, 107, 107);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30px;
+      }
+      .logo {
+        width: auto;
+        height: auto;
+      }
+      .pesquisa {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0 30px;
+      }
+      .pesquisa input {
+        width: 100%;
+        max-width: 500px;
+        padding: 12px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        
+      }
+      .pesquisa img {
+        width: auto;
+        height: auto;
+        position: absolute;
+       
+      }
+      .carrinho img {
+        width: 50px;
+        height: 50px;
+        
+      }
+      .banner{
+        display: flex;
+        justify-content: center;
+      }
+      .produto {
+        width: 400px;
+        height: 400px;
+        background-color: rgb(192, 180, 165);
+        border: 5px solid rgb(122, 107, 107);
+        margin: 10px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .produto img {
+        height: 70%;
+        width: auto;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+      }
+      .produtobotao{
+        height: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+
+      .secaoproduto {
+        display: flex;
+        justify-content: center;
+      }
+      .redor {
+        display: flex;
+        justify-content: center;
+      }
+      .caixa2 {
+        width: 600px;
+        height: 200px;
+        background-color: rgb(192, 180, 165);
+        border: 5px solid rgb(122, 107, 107);
+        margin: 10px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .caixa2 input {
+        height: 40px;
+        font-size: 16px;
+        width: 500px;
+        border-radius: 8px;
+        padding-left: 10px;
+        margin: auto;
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .caixa2botao {
+        height: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .rodapé {
+        width: 100%;
+        height: 40px;
+        background-color: rgb(192, 180, 165);
+        border: 5px solid rgb(122, 107, 107);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 30px;
+      }
+      a{
+        color: rgb(122, 107, 107);
+      }
+ 
+    </style>
+  </head>
+  <body>
+    <div class="caixa1">
+      <div class="logo">
+        <img
+          width="50"
+          height="50"
+          src="https://img.icons8.com/ios/50/online-store.png"
+          alt="online-store"
+        />
+      </div>
+
+      <div class="pesquisa">
+        <img
+          width="24"
+          height="24"
+          src="https://img.icons8.com/material-outlined/24/search--v1.png"
+          alt="search--v1"
+        />
+        <input type="text" placeholder="Pesquisar produtos..." />
+      </div>
+
+      <div class="carrinho">
+        <a href="#banner"> Banner</a>
+        <a href="#galeria"> Galeria</a>
+        <a href="#Email">Formulário</a>
+      </div>
+    </div>
+
+    <div class="banner" id="banner">
+      <img src="d:\ChatGPT Image 26 de mai. de 2026, 15_29_23.png" alt="Banner de Tênis" width=" 100%">
+    </div>
+
+    <div class="secaoproduto" id="galeria">
+      <div class="produto">
+        <img
+          src="https://imgnike-a.akamaihd.net/1920x1920/0950573XA4.jpg"
+          alt="tênis gama force"
+          class="produto img"
+        />
+        <labor for="nome">Tênis Nike AIR FORCE</labor>
+        <labor>499,99</labor>
+        <div class="produtobotao">
+          <button style="color:rgb(122, 107, 107); font-family: Verdana, Geneva, Tahoma, sans-serif;"> Adicionar ao carrinho</button>
+        </div>
+      </div>
+
+      <div class="produto">
+        <img
+          src="https://imgnike-a.akamaihd.net/1920x1920/0130125DA3.jpg"
+          alt="tênis gama force"
+          class="produto img"
+        />
+        <label for="nome">Tênis Nike AIR FORCE</label>
+        <label for="nome">359,99</label>
+        <div class="produtobotao">
+          <button> Adicionar ao carrinho</button>
+        </div>
+      </div>
+
+      <div class="produto">
+        <img
+          src="https://imgnike-a.akamaihd.net/1920x1920/10289951A4.jpg"
+          alt="tênis gama force"
+          class="produto img"
+        />
+        <label for="nome">Tênis Nike AIR FORCE</label>
+        <label for="nome">389,99</label>
+        <div class="produtobotao">
+          <button> Adicionar ao carrinho</button>
+        </div>
+      </div>
+
+      <div class="produto">
+        <img
+          src="https://imgnike-a.akamaihd.net/1920x1920/02581454A3.jpg"
+          alt="tênis gama force"
+          class="produto img"
+        />
+        <label for="nome">Tênis Nike AIR FORCE</label>
+        <label for="nome">399,99</label>
+        <div class="produtobotao">
+          <button> Adicionar ao carrinho</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="secaoproduto">
+      <div class="produto">
+        <img
+          src="https://imgnike-a.akamaihd.net/1920x1920/0294293XA3.jpg"
+          alt="tênis gama force"
+          class="produto img"
+        />
+        <label for="nome">Tênis Nike GAMMA FORCE</label>
+        <label for="nome">599,99</label>
+        <div class="produtobotao">
+          <button> Adicionar ao carrinho</button>
+        </div>
+      </div>
+
+      <div class="produto">
+        <img
+          src="https://imgnike-a.akamaihd.net/1920x1920/096664P1A4.jpg"
+          alt="tênis gama force"
+          class="produto img"
+        />
+        <label for="nome">Tênis Nike GAMMA FORCE</label>
+        <label for="nome">499,99</label>
+        <div class="produtobotao">
+          <button> Adicionar ao carrinho</button>
+        </div>
+      </div>
+
+      <div class="produto">
+        <img
+          src="https://imgnike-a.akamaihd.net/1920x1920/02790751A2.jpg"
+          alt="tênis gama force"
+          class="produto img"
+        />
+        <label for="nome">Tênis Nike GAMMA FORCE</label>
+        <label for="nome">600,00</label>
+        <div class="produtobotao">
+          <button> Adicionar ao carrinho</button>
+        </div>
+      </div>
+
+      <div class="produto">
+        <img
+          src="https://imgnike-a.akamaihd.net/1920x1920/05630652A3.jpg"
+          alt="tênis gama force"
+          class="produto img"
+        />
+        <label for="nome">Tênis Nike GAMMA FORCE</label>
+        <label for="nome">559,99</label>
+        <div class="produtobotao">
+          <button> Adicionar ao carrinho</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="redor" id="Email">
+      <div class="caixa2">
+        <input type="text" placeholder="Digite seu nome" />
+        <input type="email" placeholder="Digite seu email" />
+
+        <div class="caixa2botao">
+          <button>ENVIAR</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="rodapé">
+     <label> Feito por Natália Botassini</label>
+    </div>
+  </body>
+</html>
