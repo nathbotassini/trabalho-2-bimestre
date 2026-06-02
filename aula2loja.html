@@ -8,7 +8,7 @@
       * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
+        box-sizing: border-box; /*Esse elemento altera a forma e o tamanho total.*/
       }
 
       body {
@@ -34,29 +34,30 @@
         display: flex;
         justify-content: center;
         padding: 0 30px;
+        position: relative;
       }
       .pesquisa input {
         width: 100%;
         max-width: 500px;
-        padding: 12px;
+        padding: 12px 45px 12px 12px;
         border-radius: 8px;
         border: none;
-        outline: none;
+        outline: none; /*serve para retirar o contorno do botão */
         font-size: 16px;
-        
       }
       .pesquisa img {
         width: auto;
         height: auto;
         position: absolute;
-       
+        right: calc(50% - 250px + 10px); /*define a distância da borda direita do elemento em relação à borda direita da tela*/
+        top: 50%; /*empurra a parte superior do elemento para exatamente a metade da altura */
+        transform: translateY(-50%); /*corrige a centralização vertical*/
       }
       .carrinho img {
         width: 50px;
         height: 50px;
-        
       }
-      .banner{
+      .banner {
         display: flex;
         justify-content: center;
       }
@@ -80,13 +81,13 @@
         justify-content: center;
         margin-top: 5%;
       }
-      .produtobotao{
+      .produtobotao {
         height: 40px;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-
+        margin: 1%;
       }
 
       .secaoproduto {
@@ -127,6 +128,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 2%;
       }
       .rodapé {
         width: 100%;
@@ -138,10 +140,15 @@
         justify-content: center;
         padding: 0 30px;
       }
-      a{
+      a {
         color: rgb(122, 107, 107);
       }
- 
+      button {
+        background-color: rgb(161, 151, 151);
+        color: white;
+        padding: 10px 15px;
+        border-radius: 8px;
+      }
     </style>
   </head>
   <body>
@@ -167,13 +174,19 @@
 
       <div class="carrinho">
         <a href="#banner"> Banner</a>
+        <br />
         <a href="#galeria"> Galeria</a>
+        <br />
         <a href="#Email">Formulário</a>
       </div>
     </div>
 
     <div class="banner" id="banner">
-      <img src="d:\ChatGPT Image 26 de mai. de 2026, 15_29_23.png" alt="Banner de Tênis" width=" 100%">
+      <img
+        src="d:\ChatGPT Image 26 de mai. de 2026, 15_29_23.png"
+        alt="Banner de Tênis"
+        width=" 100%"
+      />
     </div>
 
     <div class="secaoproduto" id="galeria">
@@ -183,10 +196,10 @@
           alt="tênis gama force"
           class="produto img"
         />
-        <labor for="nome">Tênis Nike AIR FORCE</labor>
-        <labor>499,99</labor>
+        <label for="nome">Tênis Nike AIR FORCE</label>
+        <label>499,99</label>
         <div class="produtobotao">
-          <button style="color:rgb(122, 107, 107); font-family: Verdana, Geneva, Tahoma, sans-serif;"> Adicionar ao carrinho</button>
+          <button>Adicionar ao carrinho</button>
         </div>
       </div>
 
@@ -199,7 +212,7 @@
         <label for="nome">Tênis Nike AIR FORCE</label>
         <label for="nome">359,99</label>
         <div class="produtobotao">
-          <button> Adicionar ao carrinho</button>
+          <button>Adicionar ao carrinho</button>
         </div>
       </div>
 
@@ -212,7 +225,7 @@
         <label for="nome">Tênis Nike AIR FORCE</label>
         <label for="nome">389,99</label>
         <div class="produtobotao">
-          <button> Adicionar ao carrinho</button>
+          <button>Adicionar ao carrinho</button>
         </div>
       </div>
 
@@ -225,7 +238,7 @@
         <label for="nome">Tênis Nike AIR FORCE</label>
         <label for="nome">399,99</label>
         <div class="produtobotao">
-          <button> Adicionar ao carrinho</button>
+          <button>Adicionar ao carrinho</button>
         </div>
       </div>
     </div>
@@ -240,7 +253,7 @@
         <label for="nome">Tênis Nike GAMMA FORCE</label>
         <label for="nome">599,99</label>
         <div class="produtobotao">
-          <button> Adicionar ao carrinho</button>
+          <button>Adicionar ao carrinho</button>
         </div>
       </div>
 
@@ -253,7 +266,7 @@
         <label for="nome">Tênis Nike GAMMA FORCE</label>
         <label for="nome">499,99</label>
         <div class="produtobotao">
-          <button> Adicionar ao carrinho</button>
+          <button>Adicionar ao carrinho</button>
         </div>
       </div>
 
@@ -266,7 +279,7 @@
         <label for="nome">Tênis Nike GAMMA FORCE</label>
         <label for="nome">600,00</label>
         <div class="produtobotao">
-          <button> Adicionar ao carrinho</button>
+          <button>Adicionar ao carrinho</button>
         </div>
       </div>
 
@@ -279,7 +292,7 @@
         <label for="nome">Tênis Nike GAMMA FORCE</label>
         <label for="nome">559,99</label>
         <div class="produtobotao">
-          <button> Adicionar ao carrinho</button>
+          <button>Adicionar ao carrinho</button>
         </div>
       </div>
     </div>
@@ -296,7 +309,7 @@
     </div>
 
     <div class="rodapé">
-     <label> Feito por Natália Botassini</label>
+      <label> Feito por Natália Botassini</label>
     </div>
   </body>
 </html>
